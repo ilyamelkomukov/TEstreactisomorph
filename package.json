@@ -1,0 +1,51 @@
+{
+  "name": "testreactisomorph",
+  "version": "1.0.0",
+  "description": "test react isomorph",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "set NODE_ENV='production' && webpack -p",
+    "webpack-devserver": "webpack-dev-server --debug --devtool eval-source-map --output-pathinfo --watch --colors --inline --content-base public --port 8050 --host 0.0.0.0",
+    "nodemon": "set NODE_PATH=./src; && nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyamelkomukov/TEstreactisomorph.git"
+  },
+  "author": "ilyamelkomukov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilyamelkomukov/TEstreactisomorph/issues"
+  },
+  "homepage": "https://github.com/ilyamelkomukov/TEstreactisomorph#readme",
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "bluebird": "^3.4.7",
+    "express": "^4.14.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.3.2",
+    "clean-webpack-plugin": "^0.1.15",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "file-loader": "^0.10.0",
+    "html-loader": "^0.4.4",
+    "json-loader": "^0.5.4",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "nodemon": "^1.11.0",
+    "postcss-loader": "^1.3.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.0"
+  }
+}
