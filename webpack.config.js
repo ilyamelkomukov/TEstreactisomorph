@@ -1,5 +1,8 @@
-// TODO: find out what is hot module replacement
+
 // TODO: find out why ExtractTextPlugin didn`t work (see docs opened in mozilla)
+// TODO: Answer: problems with old syntax for postcss-loader, ExtractTextPlugin
+// doesn`t create separate file "style.css", but when webpack-devserver and nodemon
+// is running, style.css placed in "sources" tab (in opera). That`s wierd
 // bluebird - lib for working with promises
 global.Promise = require('bluebird');
 
@@ -63,9 +66,6 @@ module.exports = {
       {
         test: /\.jsx$|\.js$/,
         loader: 'babel-loader',
-        query: {
-          presets: ['es2015', 'react']
-        },
         exclude: ['/node_modules/', '/public/']
       },
 

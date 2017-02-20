@@ -8,6 +8,7 @@ const app = express();
 
 app.use((req, res) => {
   const componentHTML = ReactDom.renderToString(<App />);
+  console.log('Request: [GET] ' + req.originalUrl);
   return res.end(renderHTML(componentHTML));
 });
 
